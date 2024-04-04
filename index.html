@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 3</title>
+  
+  <style>
+    .parent{
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 75px 50px ;
+  background-color: bisque;
+  column-gap: 10px;
+  row-gap: 10px;
+  text-align: center;
+  grid-auto-rows: 50px;
+}
+.child{
+  background-color: aqua;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+.header{
+grid-column-start: 1;
+grid-column-end: 4;
+background-color: brown;
+justify-content: center;
+align-items: center;
+}
+.menu{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: rgb(220, 122, 122);
+}
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="header">header</div>
+  
+  <div class="menu">menu</div>
+  <div class="main">main</div>
+  <div class="footer">right</div>
+  <div class="end">footer</div>
+ 
+
+  </div>
+</body>
+</html>
